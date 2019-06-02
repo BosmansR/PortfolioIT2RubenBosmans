@@ -1,0 +1,287 @@
+html {
+  font-family: helvetica;
+  color: white;
+}
+
+.background {
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: -1000;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#181626, #321E5B);
+}
+
+body {
+  height: 100vh;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 3rem;
+  padding: 1rem 1rem .5rem 0rem;
+  text-align: center;
+  background: linear-gradient(to top right, #AB59EE, #F135F6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#btn-hamburger span {
+  background: white;
+  width: 100%;
+  height: 3px;
+  display: block;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#btn-hamburger {
+  cursor: pointer;
+  width: 5rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  position: absolute;
+  top: 6.5rem;
+  left: 50vw;
+  margin-left: -2.5rem;
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
+}
+
+#btn-hamburger:hover {
+  width: 9rem;
+  margin-left: -4.5rem;
+}
+
+header {
+  height: 11rem;
+}
+
+.nav-slider {
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      text-align: center;
+      line-height: 1.5rem;
+      background: linear-gradient(#151323, #22193A);
+      transition: opacity 1s, height 1s;
+      margin-bottom: 1rem;
+}
+
+ul {
+  line-height: 2.2rem;
+}
+
+.nav-slider a {
+      font-weight: 300;
+      text-decoration: none;
+      color: white;
+      font-size: 1.75rem;
+      margin-right: 1.75rem;
+}
+
+.nav-slider a:last-child {
+      margin-right: 0;
+}
+
+.zichtbaar {
+      opacity: 1;
+      height: 6.8rem;
+      padding: 1rem;
+      transition: all 1s;
+}
+
+h2 {
+  display: flex;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  font-family: verdana;
+  font-size: 2rem;
+  color: transparent;
+  text-align: center;
+  padding: 3rem 1rem;
+  line-height: 3rem;
+}
+
+div:hover h2 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: .5s;
+}
+
+.portret2 {
+  background-image: url(images/portret.jpg);
+  width: 80vw;
+  height: 60vh;
+  max-width: 35rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 1rem 10vw;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  margin: 0 10vw;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  font-size: .8rem;
+  margin: auto 0;
+}
+
+#langer {
+  grid-row: 1/3;
+}
+
+#Opschuiven {
+  grid-column: 2/3;
+}
+
+footer{
+  background-color: #A31AA1;
+  padding: 1rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+    grid-gap: .5rem;
+}
+
+.portret {
+  background-image: url(images/portret.jpg);
+  width: 89vw;
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 1rem auto;
+}
+
+.poster1{
+  background-image: url(images/poster1.png);
+  width: 72%;
+  height: 53.55%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 1rem 5.5%;
+
+  position: absolute;
+  left: 0%
+}
+
+.poster2{
+  background-image: url(images/poster2.png);
+  width: 72%;
+  height: 53.55%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 1rem 5.5% auto auto;
+
+  position: absolute;
+  right: 0%;
+  top: 140%
+}
+
+.s1{
+  background-image: url(images/coke.JPG);
+  width: 89%;
+  height: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 1rem auto;
+
+  position: absolute;
+  left: 05.5%;
+  top: 198%
+}
+
+.s2 {
+  background-image: url(images/havenhuis.JPG);
+  width: 89%;
+  height: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 1rem auto;
+
+  position: absolute;
+  left: 5.5%;
+  top: 233%
+}
+
+.s3 {
+  background-image: url(images/hangaar.JPG);
+  width: 89%;
+  height: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 1rem auto;
+
+  position: absolute;
+  left: 5.5%;
+  top: 268%
+}
+
+iframe {
+      margin-left: -10px;
+      margin-top: -43px;
+}
+
+.kader {
+  margin: 1rem auto;
+     overflow: hidden;
+     width: 590px;
+     height: 670px;
+     border-radius: 5%;
+}
+
+
+@supports (grid-area: auto) {
+	/* we weten hier: ondersteuning voor grid-layout */
+
+	@media (min-width:800px) {
+		/* een voorbeeld van een media query: hier schrijf je de css die wordt uitgevoerd indien het scherm minstens 800px breedte biedt */
+
+    .gridcontainer {
+      display: grid;
+      grid-template-areas:
+      "b b c c"
+      "b b c c"
+      "b b c c"
+      "b b c c"
+      "d d d d"
+      "d d d d"
+      "e e e e"
+      "e e e e"
+      width: 100%;
+      height: 100%;
+      grid-gap: 1.5rem
+      }
+
+      .poster1 {
+        grid-area: b;
+
+      }
+      .poster2 {
+        grid-area: c;
+      }
+      .s1 {
+        grid-area: d;
+      }
+      .s2 {
+        grid-area: e;
+      }
+      .s3 {
+        grid-area: f;
+      }
+
+
+}
